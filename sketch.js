@@ -178,7 +178,7 @@ function marcaPonto() {
 }
 
 function bolinhaNaoFicaPresa() {
-  if (xBolinha - raioBolinha < 0) {
+  if (xBolinha - raioBolinha <= 0 || xBolinha + raioBolinha >= 600) {
     xBolinha = 23;
   }
 }
